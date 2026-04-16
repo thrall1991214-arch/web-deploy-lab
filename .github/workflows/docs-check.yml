@@ -1,0 +1,46 @@
+name: Documentation checks
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "docs/**"
+      - ".github/workflows/docs-check.yml"
+      - ".markdownlint.json"
+      - ".lycheeignore"
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - "docs/**"
+      - ".github/workflows/docs-check.yml"
+      - ".markdownlint.json"
+      - ".lycheeignore"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v18
+        with:
+          globs: "**/*.md"
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --exclude-file .lycheeignore "**/*.md" "docs/**/*.html"

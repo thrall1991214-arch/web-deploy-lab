@@ -6,6 +6,9 @@ A hands-on deployment lab for frontend developers.
 
 Documentation site: https://thrall1991214-arch.github.io/web-deploy-lab/
 
+[![Documentation checks](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/docs-check.yml/badge.svg)](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/docs-check.yml)
+[![Deploy documentation site](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/pages.yml)
+
 `web-deploy-lab` is an open source learning project for practicing the practical parts of shipping frontend applications: building, configuring, deploying, observing, and debugging real web projects.
 
 The goal is simple: help frontend developers move from "it works locally" to "it is reliably online."
@@ -54,7 +57,10 @@ You can also browse the documentation website at https://thrall1991214-arch.gith
 ```text
 .
 +-- .github/              # Issue and pull request templates
++-- checklists/           # Deployment and release checklists
 +-- docs/                 # GitHub Pages documentation site
++-- examples/             # Example frontend apps for labs
++-- guides/               # Deployment guides and Chinese translations
 +-- labs/                 # Hands-on deployment lab catalog and exercises
 +-- CODE_OF_CONDUCT.md    # Community behavior expectations
 +-- CONTRIBUTING.md       # How to contribute labs and fixes
@@ -70,6 +76,7 @@ You can also browse the documentation website at https://thrall1991214-arch.gith
 - Add environment variable and secret handling exercises
 - Add CI build and preview deployment labs
 - Add troubleshooting guides for common deployment failures
+- Add learner feedback and deployment failure story collection
 
 See [TODO.md](TODO.md) for the active project task list.
 

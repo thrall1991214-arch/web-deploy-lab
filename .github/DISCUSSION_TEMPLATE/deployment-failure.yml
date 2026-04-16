@@ -1,0 +1,30 @@
+title: "Deployment failure story"
+body:
+  - type: textarea
+    id: situation
+    attributes:
+      label: What were you deploying?
+      description: Share the framework, host, and deployment context.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: What failed?
+      description: Include the visible symptom or first useful error.
+    validations:
+      required: true
+  - type: textarea
+    id: recovery
+    attributes:
+      label: How did you recover?
+      description: Share the fix or workaround.
+    validations:
+      required: false
+  - type: textarea
+    id: lesson
+    attributes:
+      label: What should become a lab?
+      description: Turn the story into a learner practice idea.
+    validations:
+      required: false

@@ -6,6 +6,9 @@
 
 文档网站：https://thrall1991214-arch.github.io/web-deploy-lab/
 
+[![Documentation checks](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/docs-check.yml/badge.svg)](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/docs-check.yml)
+[![Deploy documentation site](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/pages.yml)
+
 `web-deploy-lab` 是一个开源学习项目，用来练习前端应用上线过程中的真实工作：构建、配置、部署、观测和排查问题。
 
 这个项目的目标很简单：帮助前端开发者从“本地能跑”走到“稳定上线”。
@@ -54,7 +57,10 @@
 ```text
 .
 +-- .github/              # Issue 和 Pull Request 模板
++-- checklists/           # 部署和发布检查清单
 +-- docs/                 # GitHub Pages 文档网站
++-- examples/             # 实验使用的前端示例应用
++-- guides/               # 部署指南和中文翻译
 +-- labs/                 # 部署实验目录和练习
 +-- CODE_OF_CONDUCT.md    # 社区行为准则
 +-- CONTRIBUTING.md       # 贡献指南
@@ -72,6 +78,7 @@
 - 增加环境变量和密钥处理练习
 - 增加 CI 构建和预览部署实验
 - 增加常见部署失败的排查指南
+- 增加学习者反馈和部署失败案例收集入口
 
 当前任务清单见 [TODO.zh-CN.md](TODO.zh-CN.md)。
 

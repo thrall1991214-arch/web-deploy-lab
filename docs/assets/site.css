@@ -373,6 +373,45 @@ section:not(.hero) {
   max-width: 720px;
 }
 
+.resources-section {
+  background: var(--paper);
+}
+
+.resource-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.resource-grid a {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  min-height: 220px;
+  padding: 28px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.resource-grid a:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.resource-grid span {
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.resource-grid strong {
+  font-size: 1.24rem;
+  line-height: 1.38;
+}
+
 .todo-section {
   background: var(--paper);
 }
@@ -473,7 +512,8 @@ section:not(.hero) {
   }
 
   .lab-list,
-  .todo-columns {
+  .todo-columns,
+  .resource-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -523,7 +563,8 @@ section:not(.hero) {
   }
 
   .lab-list,
-  .todo-columns {
+  .todo-columns,
+  .resource-grid {
     grid-template-columns: 1fr;
   }
 

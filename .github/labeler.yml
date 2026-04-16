@@ -1,0 +1,22 @@
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "docs/**"
+
+lab:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "labs/**"
+          - "checklists/**"
+          - "guides/**"
+
+enhancement:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "examples/**"
+
+github-actions:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/workflows/**"

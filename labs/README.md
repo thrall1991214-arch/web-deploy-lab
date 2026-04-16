@@ -13,7 +13,7 @@ Each lab should be:
 
 ## Planned Labs
 
-### 01. Deploy a Static Site
+### [01. Deploy a Static Site](01-static-site/README.md)
 
 Practice turning a simple frontend project into a production deployment.
 
@@ -24,7 +24,7 @@ Topics:
 - Cache behavior
 - Deployment verification
 
-### 02. Environment Variables
+### [02. Environment Variables](02-environment-variables/README.md)
 
 Practice using environment variables across local development, preview deployments, and production.
 
@@ -35,7 +35,7 @@ Topics:
 - Runtime variables
 - Safe secret handling
 
-### 03. Preview Deployments
+### [03. Preview Deployments](03-preview-deployments/README.md)
 
 Practice reviewing changes before merging them into production.
 
@@ -46,7 +46,7 @@ Topics:
 - Smoke testing
 - Rollback thinking
 
-### 04. Custom Domains
+### [04. Custom Domains](04-custom-domains/README.md)
 
 Practice connecting a deployed frontend app to a custom domain.
 
@@ -57,7 +57,7 @@ Topics:
 - Redirects
 - Domain verification
 
-### 05. Failed Build Debugging
+### [05. Failed Build Debugging](05-failed-build-debugging/README.md)
 
 Practice diagnosing and fixing deployment failures.
 

@@ -1,5 +1,5 @@
 const revealTargets = document.querySelectorAll(
-  ".section-lead, .overview-grid, .lab-item, .path-list li, .todo-block, .contribute-layout",
+  ".section-lead, .overview-grid, .lab-item, .path-list li, .resource-grid a, .todo-block, .contribute-layout",
 );
 
 revealTargets.forEach((target) => target.classList.add("reveal"));

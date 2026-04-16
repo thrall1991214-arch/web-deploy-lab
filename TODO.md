@@ -15,47 +15,47 @@ This file tracks the open source roadmap for `web-deploy-lab`.
 - [x] Add Chinese README
 - [x] Add Chinese TODO
 - [x] Add GitHub Pages documentation site
-- [ ] Add a maintainer contact method
-- [ ] Add project badges after the first release workflow exists
+- [x] Add a maintainer contact method
+- [x] Add project badges after the first release workflow exists
 
 ## Lab Content
 
-- [ ] Write Lab 01: Deploy a static site
-- [ ] Write Lab 02: Manage environment variables
-- [ ] Write Lab 03: Use preview deployments
-- [ ] Write Lab 04: Connect a custom domain
-- [ ] Write Lab 05: Debug failed builds
-- [ ] Add a deployment checklist template
-- [ ] Add a troubleshooting glossary
+- [x] Write Lab 01: Deploy a static site
+- [x] Write Lab 02: Manage environment variables
+- [x] Write Lab 03: Use preview deployments
+- [x] Write Lab 04: Connect a custom domain
+- [x] Write Lab 05: Debug failed builds
+- [x] Add a deployment checklist template
+- [x] Add a troubleshooting glossary
 
 ## Examples
 
-- [ ] Add a plain HTML/CSS/JavaScript example app
-- [ ] Add a Vite example app
-- [ ] Add a React example app
-- [ ] Add a Next.js example app
-- [ ] Add example `.env.example` files where useful
+- [x] Add a plain HTML/CSS/JavaScript example app
+- [x] Add a Vite example app
+- [x] Add a React example app
+- [x] Add a Next.js example app
+- [x] Add example `.env.example` files where useful
 
 ## Documentation
 
-- [ ] Add a learning path for beginners
-- [ ] Add a provider-neutral deployment concepts guide
-- [ ] Add a glossary for build, preview, staging, and production
-- [ ] Add a guide for safe secret handling
-- [ ] Add a guide for deployment smoke tests
-- [ ] Keep English and Chinese docs aligned
+- [x] Add a learning path for beginners
+- [x] Add a provider-neutral deployment concepts guide
+- [x] Add a glossary for build, preview, staging, and production
+- [x] Add a guide for safe secret handling
+- [x] Add a guide for deployment smoke tests
+- [x] Keep English and Chinese docs aligned
 
 ## Automation And Quality
 
-- [ ] Add Markdown linting
-- [ ] Add link checking
-- [ ] Add a GitHub Actions workflow for documentation checks
+- [x] Add Markdown linting
+- [x] Add link checking
+- [x] Add a GitHub Actions workflow for documentation checks
 - [x] Add a GitHub Actions workflow for GitHub Pages deployment
-- [ ] Add a release checklist
+- [x] Add a release checklist
 
 ## Community
 
-- [ ] Add labels for issues and pull requests
-- [ ] Add good first issue candidates
-- [ ] Add a discussion prompt for deployment failure stories
-- [ ] Collect feedback from frontend learners
+- [x] Add labels for issues and pull requests
+- [x] Add good first issue candidates
+- [x] Add a discussion prompt for deployment failure stories
+- [x] Collect feedback from frontend learners
