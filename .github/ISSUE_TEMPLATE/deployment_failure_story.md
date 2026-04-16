@@ -8,15 +8,10 @@ assignees: ""
 
 ## What failed?
 
-
 ## What did the error look like?
-
 
 ## What caused it?
 
-
 ## How was it fixed?
 
-
 ## What should learners practice from this?
-

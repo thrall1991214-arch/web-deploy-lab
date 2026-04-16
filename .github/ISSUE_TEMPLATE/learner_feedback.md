@@ -8,15 +8,11 @@ assignees: ""
 
 ## What were you trying to learn?
 
-
 ## What worked well?
-
 
 ## What was confusing?
 
-
 ## What should be added or changed?
-
 
 ## Your experience level
 
