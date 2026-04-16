@@ -2,6 +2,8 @@
 
 A hands-on deployment lab for frontend developers.
 
+[简体中文](README.zh-CN.md)
+
 `web-deploy-lab` is an open source learning project for practicing the practical parts of shipping frontend applications: building, configuring, deploying, observing, and debugging real web projects.
 
 The goal is simple: help frontend developers move from "it works locally" to "it is reliably online."
@@ -63,6 +65,8 @@ Start with the lab catalog in [labs/README.md](labs/README.md).
 - Add environment variable and secret handling exercises
 - Add CI build and preview deployment labs
 - Add troubleshooting guides for common deployment failures
+
+See [TODO.md](TODO.md) for the active project task list.
 
 ## Contributing
 
