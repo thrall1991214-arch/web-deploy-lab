@@ -4,7 +4,7 @@ A hands-on deployment lab for frontend developers.
 
 [简体中文](README.zh-CN.md)
 
-Documentation site: https://thrall1991214-arch.github.io/web-deploy-lab/
+Documentation site: [thrall1991214-arch.github.io/web-deploy-lab](https://thrall1991214-arch.github.io/web-deploy-lab/)
 
 [![Documentation checks](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/docs-check.yml/badge.svg)](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/docs-check.yml)
 [![Deploy documentation site](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/pages.yml)
@@ -50,7 +50,7 @@ Most labs should include:
 
 Start with the lab catalog in [labs/README.md](labs/README.md).
 
-You can also browse the documentation website at https://thrall1991214-arch.github.io/web-deploy-lab/.
+You can also browse the [documentation website](https://thrall1991214-arch.github.io/web-deploy-lab/).
 
 ## Repository Structure
 

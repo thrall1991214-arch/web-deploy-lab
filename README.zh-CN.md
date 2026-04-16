@@ -4,7 +4,7 @@
 
 [English](README.md)
 
-文档网站：https://thrall1991214-arch.github.io/web-deploy-lab/
+文档网站：[thrall1991214-arch.github.io/web-deploy-lab](https://thrall1991214-arch.github.io/web-deploy-lab/)
 
 [![Documentation checks](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/docs-check.yml/badge.svg)](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/docs-check.yml)
 [![Deploy documentation site](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/thrall1991214-arch/web-deploy-lab/actions/workflows/pages.yml)
@@ -50,7 +50,7 @@
 
 实验目录从 [labs/README.md](labs/README.md) 开始。
 
-也可以直接访问文档网站：https://thrall1991214-arch.github.io/web-deploy-lab/。
+也可以直接访问[文档网站](https://thrall1991214-arch.github.io/web-deploy-lab/)。
 
 ## 仓库结构
 
