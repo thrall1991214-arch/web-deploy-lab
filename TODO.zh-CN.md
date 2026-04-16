@@ -14,6 +14,7 @@
 - [x] 添加 Issue 和 Pull Request 模板
 - [x] 添加中文 README
 - [x] 添加中文 TODO
+- [x] 添加 GitHub Pages 文档网站
 - [ ] 添加维护者联系方式
 - [ ] 在第一个发布流程完成后添加项目徽章
 
@@ -49,6 +50,7 @@
 - [ ] 添加 Markdown lint
 - [ ] 添加链接检查
 - [ ] 添加用于文档检查的 GitHub Actions 工作流
+- [x] 添加用于 GitHub Pages 部署的 GitHub Actions 工作流
 - [ ] 添加发布检查清单
 
 ## 社区

@@ -4,6 +4,8 @@
 
 [English](README.md)
 
+文档网站：https://thrall1991214-arch.github.io/web-deploy-lab/
+
 `web-deploy-lab` 是一个开源学习项目，用来练习前端应用上线过程中的真实工作：构建、配置、部署、观测和排查问题。
 
 这个项目的目标很简单：帮助前端开发者从“本地能跑”走到“稳定上线”。
@@ -45,11 +47,14 @@
 
 实验目录从 [labs/README.md](labs/README.md) 开始。
 
+也可以直接访问文档网站：https://thrall1991214-arch.github.io/web-deploy-lab/。
+
 ## 仓库结构
 
 ```text
 .
 +-- .github/              # Issue 和 Pull Request 模板
++-- docs/                 # GitHub Pages 文档网站
 +-- labs/                 # 部署实验目录和练习
 +-- CODE_OF_CONDUCT.md    # 社区行为准则
 +-- CONTRIBUTING.md       # 贡献指南

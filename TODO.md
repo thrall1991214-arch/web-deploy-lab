@@ -14,6 +14,7 @@ This file tracks the open source roadmap for `web-deploy-lab`.
 - [x] Add issue and pull request templates
 - [x] Add Chinese README
 - [x] Add Chinese TODO
+- [x] Add GitHub Pages documentation site
 - [ ] Add a maintainer contact method
 - [ ] Add project badges after the first release workflow exists
 
@@ -49,6 +50,7 @@ This file tracks the open source roadmap for `web-deploy-lab`.
 - [ ] Add Markdown linting
 - [ ] Add link checking
 - [ ] Add a GitHub Actions workflow for documentation checks
+- [x] Add a GitHub Actions workflow for GitHub Pages deployment
 - [ ] Add a release checklist
 
 ## Community

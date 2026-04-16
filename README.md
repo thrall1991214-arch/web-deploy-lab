@@ -4,6 +4,8 @@ A hands-on deployment lab for frontend developers.
 
 [简体中文](README.zh-CN.md)
 
+Documentation site: https://thrall1991214-arch.github.io/web-deploy-lab/
+
 `web-deploy-lab` is an open source learning project for practicing the practical parts of shipping frontend applications: building, configuring, deploying, observing, and debugging real web projects.
 
 The goal is simple: help frontend developers move from "it works locally" to "it is reliably online."
@@ -45,11 +47,14 @@ Most labs should include:
 
 Start with the lab catalog in [labs/README.md](labs/README.md).
 
+You can also browse the documentation website at https://thrall1991214-arch.github.io/web-deploy-lab/.
+
 ## Repository Structure
 
 ```text
 .
 +-- .github/              # Issue and pull request templates
++-- docs/                 # GitHub Pages documentation site
 +-- labs/                 # Hands-on deployment lab catalog and exercises
 +-- CODE_OF_CONDUCT.md    # Community behavior expectations
 +-- CONTRIBUTING.md       # How to contribute labs and fixes
