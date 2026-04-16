@@ -11,211 +11,224 @@
     <link rel="stylesheet" href="assets/site.css">
   </head>
   <body>
+    <div class="topline">
+      <a href="https://github.com/thrall1991214-arch/web-deploy-lab">
+        Star web-deploy-lab on GitHub
+      </a>
+    </div>
+
     <header class="site-header" aria-label="主导航">
       <a class="brand" href="#top" aria-label="web-deploy-lab 首页">
         <span class="brand-mark" aria-hidden="true">wd</span>
         <span>web-deploy-lab</span>
       </a>
       <nav class="nav-links" aria-label="页面章节">
-        <a href="#labs">实验</a>
-        <a href="#path">路径</a>
-        <a href="#resources">资源</a>
-        <a href="#todo">TODO</a>
-        <a href="#contribute">贡献</a>
+        <a href="#labs">Labs</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#resources">Resources</a>
+        <a href="#examples">Examples</a>
       </nav>
-      <a class="header-action" href="https://github.com/thrall1991214-arch/web-deploy-lab">GitHub</a>
+      <a class="header-action" href="https://github.com/thrall1991214-arch/web-deploy-lab">
+        GitHub
+      </a>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <img
-          class="hero-image"
-          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=80"
-          alt="服务器机房通道"
-        >
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Frontend Deployment Lab</p>
-          <h1 id="hero-title">从本地能跑，<br>到稳定上线。</h1>
-          <p class="hero-copy">
-            一个开源部署实验室，带你练习构建、环境变量、预览部署、域名配置和失败排查。
-          </p>
-          <div class="hero-actions" aria-label="主要操作">
-            <a class="button primary" href="#labs">开始练习</a>
-            <a class="button secondary" href="https://github.com/thrall1991214-arch/web-deploy-lab">查看源码</a>
-          </div>
-        </div>
-        <a class="scroll-cue" href="#overview" aria-label="滚动到项目概览">向下看</a>
-      </section>
-
-      <section class="overview" id="overview" aria-labelledby="overview-title">
-        <div class="section-lead">
-          <p class="eyebrow">Project Goal</p>
-          <h2 id="overview-title">把部署变成可以反复练习的技能。</h2>
-        </div>
-        <div class="overview-grid">
-          <div>
-            <p>
-              web-deploy-lab 面向已经掌握前端基础的开发者，把上线前后的关键工作拆成小实验：
-              生产构建、环境配置、预览环境、域名、HTTPS、日志和回滚思路。
+        <div class="hero-grid">
+          <div class="hero-copy-wrap">
+            <p class="eyebrow">Open-source frontend deployment lab</p>
+            <h1 id="hero-title">从本地能跑，到稳定上线。</h1>
+            <p class="hero-copy">
+              用真实实验练习构建、环境变量、预览部署、域名配置、冒烟测试和失败排查。
             </p>
+            <div class="hero-actions" aria-label="主要操作">
+              <a class="button primary" href="#labs">Start learning</a>
+              <a class="button secondary" href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/labs">
+                View labs
+              </a>
+            </div>
+            <dl class="hero-stats" aria-label="项目指标">
+              <div>
+                <dt>5</dt>
+                <dd>deployment labs</dd>
+              </div>
+              <div>
+                <dt>4</dt>
+                <dd>example apps</dd>
+              </div>
+              <div>
+                <dt>MIT</dt>
+                <dd>open source</dd>
+              </div>
+            </dl>
           </div>
-          <dl class="metrics" aria-label="项目重点">
-            <div>
-              <dt>5</dt>
-              <dd>核心实验方向</dd>
+
+          <div class="hero-panel" aria-label="部署工作流预览">
+            <div class="panel-toolbar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>deploy-preview.yml</strong>
             </div>
-            <div>
-              <dt>2</dt>
-              <dd>中英文文档入口</dd>
+            <div class="pipeline">
+              <div class="pipeline-node active">
+                <span>01</span>
+                <strong>Build</strong>
+                <small>npm run build</small>
+              </div>
+              <div class="pipeline-node">
+                <span>02</span>
+                <strong>Preview</strong>
+                <small>branch URL</small>
+              </div>
+              <div class="pipeline-node">
+                <span>03</span>
+                <strong>Smoke test</strong>
+                <small>routes, assets, env</small>
+              </div>
             </div>
-            <div>
-              <dt>MIT</dt>
-              <dd>开源许可证</dd>
-            </div>
-          </dl>
+            <pre class="code-window"><code>$ deploy-lab verify production
+checking output directory... ok
+checking public env vars... ok
+checking canonical domain... ok
+checking rollback notes... ready</code></pre>
+            <figure class="signal-image">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+                alt="打开代码编辑器的开发者工作台"
+              >
+              <figcaption>Preview confidence before production.</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
-      <section class="labs-section" id="labs" aria-labelledby="labs-title">
-        <div class="section-lead">
-          <p class="eyebrow">Lab Catalog</p>
-          <h2 id="labs-title">每个实验只训练一个上线能力。</h2>
+      <section class="strip" aria-label="项目覆盖范围">
+        <span>Static hosting</span>
+        <span>Environment variables</span>
+        <span>Preview deployments</span>
+        <span>Custom domains</span>
+        <span>Build debugging</span>
+      </section>
+
+      <section class="section labs-section" id="labs" aria-labelledby="labs-title">
+        <div class="section-head">
+          <p class="eyebrow">Lab catalog</p>
+          <h2 id="labs-title">按上线流程拆开的五个实验。</h2>
+          <p>每个实验都有场景、任务、验证步骤、常见失败和进阶练习。</p>
         </div>
-        <div class="lab-list">
-          <article class="lab-item">
-            <span class="lab-number">01</span>
-            <h3>部署静态站点</h3>
-            <p>练习生产构建产物、静态托管、缓存行为和上线后验证。</p>
-          </article>
-          <article class="lab-item">
-            <span class="lab-number">02</span>
-            <h3>管理环境变量</h3>
-            <p>区分公开变量、私密变量、构建时变量和运行时变量。</p>
-          </article>
-          <article class="lab-item">
-            <span class="lab-number">03</span>
-            <h3>使用预览部署</h3>
-            <p>用分支和 Pull Request 预览环境提前发现问题。</p>
-          </article>
-          <article class="lab-item">
-            <span class="lab-number">04</span>
-            <h3>连接自定义域名</h3>
-            <p>理解 DNS、HTTPS 证书、重定向和域名验证。</p>
-          </article>
-          <article class="lab-item">
-            <span class="lab-number">05</span>
-            <h3>排查构建失败</h3>
-            <p>阅读构建日志，定位依赖、环境和输出目录问题。</p>
-          </article>
+        <div class="lab-grid">
+          <a class="lab-card" href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/labs/01-static-site">
+            <span>01</span>
+            <h3>Deploy a static site</h3>
+            <p>发布静态文件，验证资源、缓存和生产 URL。</p>
+          </a>
+          <a class="lab-card" href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/labs/02-environment-variables">
+            <span>02</span>
+            <h3>Environment variables</h3>
+            <p>区分公开变量、密钥、构建时配置和运行时配置。</p>
+          </a>
+          <a class="lab-card" href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/labs/03-preview-deployments">
+            <span>03</span>
+            <h3>Preview deployments</h3>
+            <p>用分支预览和 PR 验证把风险挡在生产环境外。</p>
+          </a>
+          <a class="lab-card" href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/labs/04-custom-domains">
+            <span>04</span>
+            <h3>Custom domains</h3>
+            <p>连接域名、检查 DNS、HTTPS 和规范重定向。</p>
+          </a>
+          <a class="lab-card wide" href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/labs/05-failed-build-debugging">
+            <span>05</span>
+            <h3>Failed build debugging</h3>
+            <p>从第一条有效错误开始，复现、修复、记录，再把经验变成清单。</p>
+          </a>
         </div>
       </section>
 
-      <section class="path-section" id="path" aria-labelledby="path-title">
-        <div class="section-lead">
-          <p class="eyebrow">Learning Path</p>
-          <h2 id="path-title">按照真实上线顺序推进。</h2>
+      <section class="section workflow-section" id="workflow" aria-labelledby="workflow-title">
+        <div class="section-head">
+          <p class="eyebrow">Deployment workflow</p>
+          <h2 id="workflow-title">把上线变成可重复执行的系统。</h2>
         </div>
-        <ol class="path-list">
-          <li>
-            <strong>准备</strong>
-            <span>确认构建命令、输出目录、依赖版本和环境变量。</span>
-          </li>
-          <li>
-            <strong>发布</strong>
-            <span>部署到预览环境，完成冒烟测试，再进入生产环境。</span>
-          </li>
-          <li>
-            <strong>验证</strong>
-            <span>检查页面、网络请求、重定向、缓存和错误日志。</span>
-          </li>
-          <li>
-            <strong>复盘</strong>
-            <span>记录失败案例，把修复步骤沉淀成团队清单。</span>
-          </li>
-        </ol>
+        <div class="workflow-layout">
+          <ol class="workflow-list">
+            <li>
+              <span>prepare</span>
+              <strong>确认构建命令、输出目录、依赖版本和环境变量。</strong>
+            </li>
+            <li>
+              <span>preview</span>
+              <strong>用预览部署验证变更，让评审者直接打开真实 URL。</strong>
+            </li>
+            <li>
+              <span>verify</span>
+              <strong>跑冒烟测试：路由、资源、API、域名、HTTPS。</strong>
+            </li>
+            <li>
+              <span>document</span>
+              <strong>记录失败案例和回滚方式，下一次少猜一点。</strong>
+            </li>
+          </ol>
+          <pre class="checklist-code"><code>deploy:
+  build: npm run build
+  output: dist
+  preview: required
+  smoke_tests:
+    - homepage
+    - nested route
+    - env label
+    - canonical domain
+  rollback: previous deployment</code></pre>
+        </div>
       </section>
 
-      <section class="resources-section" id="resources" aria-labelledby="resources-title">
-        <div class="section-lead">
-          <p class="eyebrow">Resources</p>
-          <h2 id="resources-title">指南、清单和示例都已经准备好。</h2>
+      <section class="section resources-section" id="resources" aria-labelledby="resources-title">
+        <div class="section-head">
+          <p class="eyebrow">Documentation</p>
+          <h2 id="resources-title">指南、清单和术语表。</h2>
         </div>
         <div class="resource-grid">
           <a href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/guides">
             <span>Guides</span>
-            <strong>部署概念、密钥处理、冒烟测试和初学者路径。</strong>
-          </a>
-          <a href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/examples">
-            <span>Examples</span>
-            <strong>Plain static、Vite、React 和 Next.js 示例应用。</strong>
+            <strong>学习路径、部署概念、密钥处理、冒烟测试。</strong>
           </a>
           <a href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/checklists">
             <span>Checklists</span>
-            <strong>上线前后检查清单和发布检查清单。</strong>
+            <strong>上线前检查、上线后检查和发布检查清单。</strong>
+          </a>
+          <a href="https://github.com/thrall1991214-arch/web-deploy-lab/blob/main/guides/zh-CN/learning-path.md">
+            <span>中文文档</span>
+            <strong>面向中文读者的部署学习路径和核心指南。</strong>
           </a>
         </div>
       </section>
 
-      <section class="todo-section" id="todo" aria-labelledby="todo-title">
-        <div class="section-lead">
-          <p class="eyebrow">Project TODO</p>
-          <h2 id="todo-title">当前项目路线。</h2>
+      <section class="section examples-section" id="examples" aria-labelledby="examples-title">
+        <div class="section-head">
+          <p class="eyebrow">Example apps</p>
+          <h2 id="examples-title">用不同前端形态练同一套部署判断。</h2>
         </div>
-        <div class="todo-columns">
-          <div class="todo-block">
-            <h3>文档</h3>
-            <ul>
-              <li>补齐初学者学习路径</li>
-              <li>补齐部署概念指南</li>
-              <li>保持中英文文档同步</li>
-            </ul>
-          </div>
-          <div class="todo-block">
-            <h3>实验</h3>
-            <ul>
-              <li>静态站点部署</li>
-              <li>环境变量管理</li>
-              <li>构建失败排查</li>
-            </ul>
-          </div>
-          <div class="todo-block">
-            <h3>质量</h3>
-            <ul>
-              <li>Markdown lint</li>
-              <li>链接检查</li>
-              <li>发布检查清单</li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-links">
-          <a href="https://github.com/thrall1991214-arch/web-deploy-lab/blob/main/TODO.zh-CN.md">
-            中文 TODO
-          </a>
-          <a href="https://github.com/thrall1991214-arch/web-deploy-lab/blob/main/TODO.md">
-            English TODO
-          </a>
+        <div class="example-grid">
+          <a href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/examples/plain-static">Plain static</a>
+          <a href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/examples/vite-app">Vite</a>
+          <a href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/examples/react-app">React</a>
+          <a href="https://github.com/thrall1991214-arch/web-deploy-lab/tree/main/examples/next-app">Next.js</a>
         </div>
       </section>
 
-      <section class="contribute-section" id="contribute" aria-labelledby="contribute-title">
-        <div class="section-lead">
+      <section class="section contribute-section" aria-labelledby="contribute-title">
+        <div class="cta-panel">
           <p class="eyebrow">Contribute</p>
-          <h2 id="contribute-title">把你遇到过的部署问题，变成别人能练习的实验。</h2>
-        </div>
-        <div class="contribute-layout">
-          <p>
-            可以贡献新的实验、改进说明、补充故障案例、修复链接，或者把一次真实部署踩坑整理成可复现步骤。
-          </p>
-          <div class="contribute-actions">
+          <h2 id="contribute-title">把一次真实踩坑，变成别人能练习的实验。</h2>
+          <p>提交部署失败故事、补充实验、改进检查清单，或者把某个平台的部署细节写成可复现步骤。</p>
+          <div class="hero-actions">
             <a class="button primary" href="https://github.com/thrall1991214-arch/web-deploy-lab/issues/new/choose">
-              提交 Issue
+              Share a failure
             </a>
-            <a
-              class="button secondary light"
-              href="https://github.com/thrall1991214-arch/web-deploy-lab/blob/main/CONTRIBUTING.md"
-            >
-              贡献指南
+            <a class="button secondary" href="https://github.com/thrall1991214-arch/web-deploy-lab/blob/main/CONTRIBUTING.md">
+              Contribution guide
             </a>
           </div>
         </div>
@@ -224,8 +237,8 @@
 
     <footer class="site-footer">
       <span>web-deploy-lab</span>
-      <span>MIT License</span>
       <a href="https://github.com/thrall1991214-arch/web-deploy-lab">GitHub Repository</a>
+      <span>MIT License</span>
     </footer>
 
     <script src="assets/site.js"></script>
